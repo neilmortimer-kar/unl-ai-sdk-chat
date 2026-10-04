@@ -3,7 +3,7 @@ import { useChat } from "@ai-sdk/react";
 import { useState } from "react";
 
 export default function Chat() {
-  const { messages, sendMessage, status } = useChat();
+  const { messages, sendMessage, status, error } = useChat();
   const [input, setInput] = useState("");
   return (
     <main>
@@ -15,6 +15,11 @@ export default function Chat() {
           {m.parts.map((p, i) => (p.type === "text" ? <span key={i}>{p.text}</span> : null))}
         </div>
       ))}
+      {error ? (
+        <p role="alert" style={{ margin: "12px 0", padding: 10, border: "1px solid #c33", color: "#a00" }}>
+          {error.message}
+        </p>
+      ) : null}
       <form
         onSubmit={(e) => {
           e.preventDefault();
