@@ -1,5 +1,10 @@
 # Unl + AI SDK chat (Deploy with Vercel)
 
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/%40unlimitless%2Fai-sdk)](https://www.npmjs.com/package/@unlimitless/ai-sdk)
+
+Unl is the product by [Unlimitless](https://unlimitless.ai); see the [developer page](https://unlimitless.ai/developers).
+
 A Next.js chat on the Vercel AI Gateway. The model carries your why on every call: one line, `withUnl(model)`.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fneilmortimer-kar%2Funl-ai-sdk-chat&integration-ids=oac_TLalANC9cCnRMvZHKIq33VF7&project-name=unl-ai-sdk-chat)
@@ -30,3 +35,7 @@ Change `UNL_MODEL` to any AI Gateway model id. Your model, prompts and tools sta
 Checked 4 Oct 2026: `next build` passes on Next 16.3.8 with `ai` 7.0.127 and `@unlimitless/ai-sdk` 0.1.0 from npm.
 
 MIT licensed.
+
+## Related
+
+- [unl-connector](https://github.com/neilmortimer-kar/unl-connector) — MCP connector manifests for Claude Code, Cursor, etc.
